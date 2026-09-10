@@ -1,27 +1,120 @@
 <html>
     <body>
-        <!-- HTML Form -->
-<h2>Contact Form</h2>
+   <h2>📝 Contact & Information Form</h2>
 
 <form>
 
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname">
+    <!-- Full Name -->
+    <label for="fullname">👤 Full Name:</label><br>
+    <input 
+        type="text" 
+        id="fullname" 
+        name="fullname" 
+        placeholder="Enter your full name"
+        required
+    >
 
     <br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
+    <!-- Email -->
+    <label for="email">📧 Email Address:</label><br>
+    <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="example@gmail.com"
+        required
+    >
 
     <br><br>
 
-    <label for="message">Message:</label>
-    <input type="text" id="message" name="message">
+    <!-- Phone -->
+    <label for="phone">📱 Phone Number:</label><br>
+    <input 
+        type="text" 
+        id="phone" 
+        name="phone" 
+        placeholder="Enter your phone number"
+    >
 
     <br><br>
 
-    <input type="submit" value="Submit">
+    <!-- Age -->
+    <label for="age">🎂 Age:</label><br>
+    <input 
+        type="number" 
+        id="age" 
+        name="age" 
+        placeholder="Enter your age"
+    >
+
+    <br><br>
+
+    <!-- Gender -->
+    <label>👤 Gender:</label><br>
+
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label>
+
+    <br><br>
+
+    <!-- Country -->
+    <label for="country">🌍 Select Your Country:</label><br>
+
+    <select id="country" name="country">
+        <option value="">-- Select Country --</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <br><br>
+
+    <!-- Skills -->
+    <label>💻 Select Your Skills:</label><br>
+
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" id="design" name="skills" value="Web Design">
+    <label for="design">Web Design</label>
+
+    <br><br>
+
+    <!-- Message -->
+    <label for="message">💬 Message / Information:</label><br>
+
+    <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        cols="40"
+        placeholder="Write your message here..."
+    ></textarea>
+
+    <br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="🚀 Submit Form">
+
+    <!-- Reset -->
+    <input type="reset" value="🔄 Reset Form">
 
 </form>
+
     </body>
 </html>

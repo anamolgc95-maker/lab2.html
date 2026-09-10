@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Anamol GC Portfolio</title>
 
     <style>
 
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background-color: lightblue;
             margin: 0;
         }
@@ -19,19 +21,25 @@
             background-color: darkblue;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
         nav {
-            text-align: center;
             background-color: white;
+            text-align: center;
             padding: 15px;
         }
 
         nav a {
-            margin: 10px;
             text-decoration: none;
             color: darkblue;
+            margin: 12px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: red;
         }
 
         section {
@@ -47,20 +55,28 @@
 
         .skills {
             background-color: lightgray;
-            padding: 10px;
+            padding: 15px;
+            border-radius: 5px;
         }
 
         .project {
             border: 1px solid gray;
             padding: 15px;
-            margin: 10px;
+            margin-top: 15px;
         }
 
-        button {
+        .button {
             background-color: darkblue;
             color: white;
-            padding: 10px;
-            border: none;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: blue;
         }
 
         footer {
@@ -68,6 +84,7 @@
             color: white;
             text-align: center;
             padding: 15px;
+            margin-top: 20px;
         }
 
     </style>
@@ -77,43 +94,75 @@
 
 <body>
 
+
+    <!-- Header -->
+
     <header>
 
         <h1>Welcome to My Portfolio</h1>
 
-        <p>Hello! My name is Anamol GC.</p>
+        <p>Hello! My name is Anamol GC 👋</p>
+
+        <p>I am learning HTML and Web Development.</p>
 
     </header>
 
 
+    <!-- Navigation -->
+
     <nav>
+
+        <a href="#home">Home</a>
 
         <a href="#about">About Me</a>
 
         <a href="#skills">Skills</a>
 
-        <a href="#projects">Projects</a>
+        <a href="Intro.html">Intro</a>
 
-        <a href="#contact">Contact</a>
+        <a href="Table.html">Table</a>
+
+        <a href="Form.html">Form</a>
+
+        <a href="lab2.html">Lab 2</a>
 
     </nav>
 
 
-    <section id="about">
+    <!-- Home -->
 
-        <h2>About Me</h2>
+    <section id="home">
+
+        <h2>🏠 Home</h2>
 
         <p>
-            Hello! My name is Anamol GC. I am learning HTML and web development.
-            I enjoy learning how websites are created.
+            Welcome to my personal portfolio website.
+            This website was created while I am learning HTML and basic CSS.
         </p>
 
     </section>
 
 
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>👤 About Me</h2>
+
+        <p>
+            Hello! My name is Anamol GC.
+            I am interested in learning web development and creating websites.
+            I am currently learning HTML and basic CSS.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+
     <section id="skills">
 
-        <h2>My Skills</h2>
+        <h2>💻 My Skills</h2>
 
         <div class="skills">
 
@@ -134,45 +183,72 @@
     </section>
 
 
-    <section id="projects">
+    <!-- Projects -->
 
-        <h2>My Projects</h2>
+    <section>
+
+        <h2>📁 My HTML Pages</h2>
+
 
         <div class="project">
 
-            <h3>My Portfolio</h3>
+            <h3>👤 Introduction Page</h3>
 
             <p>
-                This is my first portfolio website created using HTML and CSS.
+                This page contains my introduction and basic information.
             </p>
+
+            <a href="Intro.html" class="button">Open Intro</a>
 
         </div>
 
 
         <div class="project">
 
-            <h3>HTML Lab 2</h3>
+            <h3>📊 Table Page</h3>
 
             <p>
-                This project contains lists, a table and a form.
+                This page contains a table created using HTML.
             </p>
 
-            <br>
+            <a href="Table.html" class="button">Open Table</a>
 
-            <a href="lab2.html">
+        </div>
 
-                <button>Open Lab 2</button>
 
-            </a>
+        <div class="project">
+
+            <h3>📝 Form Page</h3>
+
+            <p>
+                This page contains an HTML form with different input fields.
+            </p>
+
+            <a href="Form.html" class="button">Open Form</a>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>📚 Lab 2</h3>
+
+            <p>
+                This page contains lists, tables and forms for my Lab 2 assignment.
+            </p>
+
+            <a href="lab2.html" class="button">Open Lab 2</a>
 
         </div>
 
     </section>
 
 
-    <section id="contact">
+    <!-- Contact -->
 
-        <h2>Contact Me</h2>
+    <section>
+
+        <h2>📧 Contact Me</h2>
 
         <p>Email: anamol@example.com</p>
 
@@ -181,11 +257,16 @@
     </section>
 
 
+    <!-- Footer -->
+
     <footer>
 
         <p>Created by Anamol GC</p>
 
+        <p>My HTML Portfolio</p>
+
     </footer>
+
 
 </body>
 

@@ -4,10 +4,9 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Anamol GC Portfolio</title>
+    <title>HTML Lists - Lab 2</title>
 
     <style>
 
@@ -24,59 +23,30 @@
             padding: 25px;
         }
 
-        nav {
+        .container {
+            margin: 30px;
+        }
+
+        .box {
             background-color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: darkblue;
-            margin: 12px;
-            font-size: 17px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: red;
-        }
-
-        section {
-            background-color: white;
-            margin: 20px;
             padding: 20px;
+            margin-bottom: 20px;
             border-radius: 10px;
+            border-left: 6px solid darkblue;
         }
 
         h2 {
             color: darkblue;
         }
 
-        .skills {
-            background-color: lightgray;
-            padding: 15px;
+        li {
+            padding: 5px;
+        }
+
+        ul, ol {
+            background-color: #eeeeee;
+            padding: 20px 40px;
             border-radius: 5px;
-        }
-
-        .project {
-            border: 1px solid gray;
-            padding: 15px;
-            margin-top: 15px;
-        }
-
-        .button {
-            background-color: darkblue;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background-color: blue;
         }
 
         footer {
@@ -84,7 +54,6 @@
             color: white;
             text-align: center;
             padding: 15px;
-            margin-top: 20px;
         }
 
     </style>
@@ -94,176 +63,135 @@
 
 <body>
 
-
-    <!-- Header -->
-
     <header>
 
-        <h1>Welcome to My Portfolio</h1>
+        <h1>📋 HTML Lists</h1>
 
-        <p>Hello! My name is Anamol GC 👋</p>
-
-        <p>I am learning HTML and Web Development.</p>
+        <p>Different Types of Ordered and Unordered Lists</p>
 
     </header>
 
 
-    <!-- Navigation -->
-
-    <nav>
-
-        <a href="#home">Home</a>
-
-        <a href="#about">About Me</a>
-
-        <a href="#skills">Skills</a>
-
-        <a href="Intro.html">Intro</a>
-
-        <a href="Table.html">Table</a>
-
-        <a href="Form.html">Form</a>
-
-        <a href="lab2.html">Lab 2</a>
-
-    </nav>
+    <div class="container">
 
 
-    <!-- Home -->
+        <!-- Unordered List -->
 
-    <section id="home">
+        <div class="box">
 
-        <h2>🏠 Home</h2>
-
-        <p>
-            Welcome to my personal portfolio website.
-            This website was created while I am learning HTML and basic CSS.
-        </p>
-
-    </section>
-
-
-    <!-- About -->
-
-    <section id="about">
-
-        <h2>👤 About Me</h2>
-
-        <p>
-            Hello! My name is Anamol GC.
-            I am interested in learning web development and creating websites.
-            I am currently learning HTML and basic CSS.
-        </p>
-
-    </section>
-
-
-    <!-- Skills -->
-
-    <section id="skills">
-
-        <h2>💻 My Skills</h2>
-
-        <div class="skills">
+            <h2>💻 My Skills</h2>
 
             <ul>
 
                 <li>HTML</li>
-
                 <li>Basic CSS</li>
-
                 <li>Web Design</li>
-
                 <li>Learning Programming</li>
 
             </ul>
 
         </div>
 
-    </section>
 
+        <!-- Ordered List: Numbers -->
 
-    <!-- Projects -->
+        <div class="box">
 
-    <section>
+            <h2>🌞 My Daily Activities</h2>
 
-        <h2>📁 My HTML Pages</h2>
+            <ol type="1">
 
+                <li>Wake up</li>
+                <li>Get ready</li>
+                <li>Study</li>
+                <li>Practice coding</li>
+                <li>Relax</li>
 
-        <div class="project">
-
-            <h3>👤 Introduction Page</h3>
-
-            <p>
-                This page contains my introduction and basic information.
-            </p>
-
-            <a href="Intro.html" class="button">Open Intro</a>
+            </ol>
 
         </div>
 
 
-        <div class="project">
+        <!-- Ordered List: Capital Letters -->
 
-            <h3>📊 Table Page</h3>
+        <div class="box">
 
-            <p>
-                This page contains a table created using HTML.
-            </p>
+            <h2>🎮 My Hobbies</h2>
 
-            <a href="Table.html" class="button">Open Table</a>
+            <ol type="A">
 
-        </div>
+                <li>Playing Games</li>
+                <li>Listening to Music</li>
+                <li>Learning Technology</li>
+                <li>Watching Videos</li>
 
-
-        <div class="project">
-
-            <h3>📝 Form Page</h3>
-
-            <p>
-                This page contains an HTML form with different input fields.
-            </p>
-
-            <a href="Form.html" class="button">Open Form</a>
+            </ol>
 
         </div>
 
 
-        <div class="project">
+        <!-- Ordered List: Small Letters -->
 
-            <h3>📚 Lab 2</h3>
+        <div class="box">
 
-            <p>
-                This page contains lists, tables and forms for my Lab 2 assignment.
-            </p>
+            <h2>📚 Things I Like to Learn</h2>
 
-            <a href="lab2.html" class="button">Open Lab 2</a>
+            <ol type="a">
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Programming</li>
+
+            </ol>
 
         </div>
 
-    </section>
+
+        <!-- Ordered List: Capital Roman Numbers -->
+
+        <div class="box">
+
+            <h2>🌐 Steps to Create a Website</h2>
+
+            <ol type="I">
+
+                <li>Plan the website</li>
+                <li>Create an HTML file</li>
+                <li>Add website content</li>
+                <li>Add CSS styling</li>
+                <li>Test the website</li>
+
+            </ol>
+
+        </div>
 
 
-    <!-- Contact -->
+        <!-- Ordered List: Small Roman Numbers -->
 
-    <section>
+        <div class="box">
 
-        <h2>📧 Contact Me</h2>
+            <h2>🚀 My Learning Journey</h2>
 
-        <p>Email: anamol@example.com</p>
+            <ol type="i">
 
-        <p>Location: Nepal</p>
+                <li>Learn HTML basics</li>
+                <li>Practice HTML tags</li>
+                <li>Learn CSS</li>
+                <li>Create projects</li>
+                <li>Improve my skills</li>
 
-    </section>
+            </ol>
+
+        </div>
 
 
-    <!-- Footer -->
+    </div>
+
 
     <footer>
 
-        <p>Created by Anamol GC</p>
-
-        <p>My HTML Portfolio</p>
+        <p>Created by Anamol GC | HTML Lab 2</p>
 
     </footer>
 
